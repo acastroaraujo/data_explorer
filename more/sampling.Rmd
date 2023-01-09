@@ -1,0 +1,13 @@
+---
+title: "Sampling"
+author: "andrés castro araújo"
+date: '2022-06-21'
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+"Survey weighting is a mess" (Gelman 2007, 153).
+
