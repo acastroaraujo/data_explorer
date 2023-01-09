@@ -1,0 +1,653 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      CODEBOOK
+
+
+                             SCF Combined Extract Data
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      SCF Combined Extract Data                                         Page i
+
+
+                                      CONTENTS
+
+
+      item                                                                page
+
+      CASEID             Case ID (numeric)                                   1
+      WGT                Sample weight                                       1
+      YEAR               Survey Year                                         1
+      AGE                Age of reference person                             1
+      AGECL              Age group of the reference person                   1
+      HHSEX              Gender of household reference person                2
+      EDCL               Education category of reference person              2
+      FAMSTRUCT          Family structure of household                       2
+      HOUSECL            Home-ownership category of household                3
+      KIDS               Total number of children in household               3
+      OCCAT1             Occupation categories for reference person          3
+      OCCAT2             Occupation classification for reference person      4
+      RACE               Race/ethnicity of respondent                        4
+      RACECL             Class of race of respondent                         4
+      LIFECL             Life cycle of reference person                      5
+      ASSET              Total value of assets held by household, 2019 do    5
+      ASSETCAT           Asset percentile groups                             5
+      FIN                Total value of financial assets held by househol    6
+      DEBT               Total value of debt held by household, 2019 doll    6
+      FINLIT             Number of financial literacy questions answered     6
+      INCOME             Total amount of income of household, 2019 dollar    6
+      KGINC              Capital gain or loss income, 2019 dollars           7
+      KGTOTAL            Total unrealized capital gains or losses for the    7
+      NETWORTH           Total net worth of household, 2019 dollars          7
+      NWCAT              Net worth percentile groups                         8
+      NWPCTLECAT         Alternate net worth percentile groups               9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  August 30, 2022
+
+
+
+      SCF Combined Extract Data                                         Page 1
+
+
+      CASEID             Case ID (numeric)
+
+           Data type: numeric
+           Record/columns: 1/1-6
+
+      ________________________________________________________________________
+
+      WGT                Sample weight
+
+           This weight should be used for all estimations using the SCF
+           data for which weights are appropriate.
+
+           Data type: numeric
+           Decimals: 10
+           Record/columns: 1/8-23
+
+      ________________________________________________________________________
+
+      YEAR               Survey Year
+
+           Data type: numeric
+           Record/columns: 1/25-28
+
+      ________________________________________________________________________
+
+      AGE                Age of reference person
+
+           Data type: numeric
+           Record/columns: 1/30-31
+
+      ________________________________________________________________________
+
+      AGECL              Age group of the reference person
+
+           Age groups are
+           1.  <35      4.  55-64
+           2.  35-44   5.  65-74
+           3.  45-54   6.  >=75
+
+           VALUE  LABEL
+               1  <35
+               2  35-44
+               3  45-54
+               4  55-64
+               5  65-74
+               6  >=75
+
+           Data type: numeric
+           Record/column: 1/33
+
+
+
+
+
+
+                                  August 30, 2022
+
+
+
+      SCF Combined Extract Data                                         Page 2
+
+
+      HHSEX              Gender of household reference person
+
+           VALUE  LABEL
+               1  male
+               2  female
+
+           Data type: numeric
+           Record/column: 1/35
+
+      ________________________________________________________________________
+
+      EDCL               Education category of reference person
+
+           1. no high school diploma/GED
+           2. high school diploma or GED
+           3. some college
+           4. college degree
+
+           VALUE  LABEL
+               1  no high school diploma/GED
+               2  high school diploma or GED
+               3  some college
+               4  college degree
+
+           Data type: numeric
+           Record/column: 1/37
+
+      ________________________________________________________________________
+
+      FAMSTRUCT          Family structure of household
+
+           1=not married/LWP + children
+           2=not married/LWP + no children + reference person under 55
+           3=not married/LWP + no children + reference person 55 or older
+           4=married/LWP+ children
+           5=married/LWP + no children
+
+           VALUE  LABEL
+               1  not married/LWP + children
+               2  not married/LWP + no children + reference person under 55
+               3  not married/LWP + no children + reference person 55 or older
+               4  married/LWP+ children
+               5  married/LWP + no children
+
+           Data type: numeric
+           Record/column: 1/39
+
+
+
+
+
+
+
+                                  August 30, 2022
+
+
+
+      SCF Combined Extract Data                                         Page 3
+
+
+      HOUSECL            Home-ownership category of household
+
+           1=owns ranch/farm/mobile home/house/condo/coop/etc.,
+           2=otherwise
+
+           VALUE  LABEL
+               1  owns ranch/farm/mobile home/house/condo/coop/etc.
+               2  otherwise
+
+           Data type: numeric
+           Record/column: 1/41
+
+      ________________________________________________________________________
+
+      KIDS               Total number of children in household
+
+           Includes natural children,step-children, and foster children
+           of household reference person or spouse/partner.
+
+           From 1995 forward, household listing information collected
+           for one fewer HH member.
+
+           Data type: numeric
+           Record/columns: 1/43-44
+
+      ________________________________________________________________________
+
+      OCCAT1             Occupation categories for reference person
+
+           1. work for someone else
+           2. self-employed/partnership
+           3. retired/disabled + (student/homemaker/misc. not working and age 65 or older)
+           4. other groups not working (mainly those under 65 and out of the labor force)
+
+           VALUE  LABEL
+               1  work for someone else
+               2  self-employed/partnership
+               3  retired/disabled + (student/homemaker/misc. not working and age 65 or older)
+               4  other groups not working (mainly those under 65 and out of the labor force)
+
+           Data type: numeric
+           Record/column: 1/46
+
+
+
+
+
+
+
+
+
+
+
+                                  August 30, 2022
+
+
+
+      SCF Combined Extract Data                                         Page 4
+
+
+      OCCAT2             Occupation classification for reference person
+
+           1=managerial/professional
+           2=technical/sales/services
+           3=other (incl. production/craft/repair workers, operators, laborers,
+             farmers, foresters, fishers)
+           4=not working
+
+           VALUE  LABEL
+               1  managerial/professional
+               2  technical/sales/services
+               3  other (incl. production/craft/repair workers, operators, laborers, farmers, foresters, fishers)
+               4  not working
+
+           Data type: numeric
+           Record/column: 1/48
+
+      ________________________________________________________________________
+
+      RACE               Race/ethnicity of respondent
+
+           1 = white non-Hispanic
+           2 = black / African American
+           3 = Hispanic
+           5 = Other
+
+           VALUE  LABEL
+               1  white non-Hispanic
+               2  black / African American
+               3  Hispanic
+               5  Other
+
+           Data type: numeric
+           Record/column: 1/50
+
+      ________________________________________________________________________
+
+      RACECL             Class of race of respondent
+
+           1 = white non-Hispanic
+           2 = nonwhite or Hispanic
+
+           VALUE  LABEL
+               1  white non-Hispanic
+               2  nonwhite or Hispanic
+
+           Data type: numeric
+           Record/column: 1/52
+
+
+
+
+
+                                  August 30, 2022
+
+
+
+      SCF Combined Extract Data                                         Page 5
+
+
+      LIFECL             Life cycle of reference person
+
+           VALUE  LABEL
+               1  reference person under 55 + not married/LWP + no children
+               2  reference person under 55 + married/LWP + no children
+               3  reference person under 55 + married/LWP + children
+               4  reference person under 55 + not married/LWP + children
+               5  reference person 55 or older and working
+               6  reference person 55 or older and not working
+
+           Data type: numeric
+           Record/column: 1/54
+
+      ________________________________________________________________________
+
+      ASSET              Total value of assets held by household, 2019 dollars
+
+           The sum of financial assets and nonfinancial assets.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/56-68
+
+      ________________________________________________________________________
+
+      ASSETCAT           Asset percentile groups
+
+           Asset percentile groups
+           1 = 0-20
+           2 = 20-39.9
+           3 = 40-59.9
+           4 = 60-79.9
+           5 = 80-89.9
+           6 = 90-100
+
+           VALUE  LABEL
+               1  0-20
+               2  20-39.9
+               3  40-59.9
+               4  60-79.9
+               5  80-89.9
+               6  90-100
+
+           Data type: numeric
+           Record/column: 1/70
+
+
+
+
+
+
+
+
+                                  August 30, 2022
+
+
+
+      SCF Combined Extract Data                                         Page 6
+
+
+      FIN                Total value of financial assets held by household, 2019 dollars
+
+           Consists of liquid assets, certificates of deposit, directly held
+           pooled investment funds, stocks, bonds, quasi-liquid assets, savings
+           bonds, whole life insurance, other managed assets, and other financial
+           assets. See the definition of each asset for further details.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/72-84
+
+      ________________________________________________________________________
+
+      DEBT               Total value of debt held by household, 2019 dollars
+
+           Includes principal residence debt (mortgages and HELOCs), other lines
+           of credit, debt for other residential property, credit card debt,
+           installment loans,and other debt.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/86-97
+
+      ________________________________________________________________________
+
+      FINLIT             Number of financial literacy questions answered correctly
+
+           Only available for 2016 and later surveys.
+
+           Data type: numeric
+           Record/column: 1/99
+
+      ________________________________________________________________________
+
+      INCOME             Total amount of income of household, 2019 dollars
+
+           Household income for previous calendar year.  Inlcudes wages,
+           self-employment and business income, taxable and tax-exempt
+           interest, dividends, realized capital gains, food stamps and
+           other support programs provided by the government, pension income
+           and withdrawals from retirement accounts, Social Security income,
+           alimony and other support payments, and miscellaneous sources of
+           income.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/101-112
+
+
+
+
+
+
+
+                                  August 30, 2022
+
+
+
+      SCF Combined Extract Data                                         Page 7
+
+
+      KGINC              Capital gain or loss income, 2019 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/114-125
+
+      ________________________________________________________________________
+
+      KGTOTAL            Total unrealized capital gains or losses for the household, 2019 dollars
+
+           Includes the following capital gains: primary residence, other real estate,
+           businesses, and stocks and pooled investment funds.
+
+           Capital gains for the primary residence are calculated as the current price
+           less the original purchase price and less improvements. Capital gains on real
+           estate are calculated as the current vale less the purchase price adjusted
+           for ownership share. Capital gains on businesses are calculated as current
+           value less tax basis (active and nonactive businesses). Capital gains on stocks
+           and pooled investment funds are calculated as the current value less gains or
+           losses.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/127-140
+
+      ________________________________________________________________________
+
+      NETWORTH           Total net worth of household, 2019 dollars
+
+           The difference between assets and debt. See definitions of assets
+           and debt for further clarification.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/142-154
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  August 30, 2022
+
+
+
+      SCF Combined Extract Data                                         Page 8
+
+
+      NWCAT              Net worth percentile groups
+
+           Net worth percentile groups
+
+           1 = 0-24.9
+           2 = 25-49.9
+           3 = 50-74.9
+           4 = 75-89.9
+           5 = 90-100
+
+           VALUE  LABEL
+               1  0-24.9
+               2  25-49.9
+               3  50-74.9
+               4  75-89.9
+               5  90-100
+
+           Data type: numeric
+           Record/column: 1/156
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  August 30, 2022
+
+
+
+      SCF Combined Extract Data                                         Page 9
+
+
+      NWPCTLECAT         Alternate net worth percentile groups
+
+           Alternate net worth percentile groups
+
+           1 = 0-9.9
+           2 = 10-19.9
+           3 = 20-29.9
+           4 = 30-39.9
+           5 = 40-49.9
+           6 = 50-59.9
+           7 = 60-69.9
+           8 = 70-79.9
+           9 = 80-89.9
+           10 = 90-94.9
+           11 = 95-98.9
+           12 = 99-100
+
+           VALUE  LABEL
+               1  0-9.9
+               2  10-19.9
+               3  20-29.9
+               4  30-39.9
+               5  40-49.9
+               6  50-59.9
+               7  60-69.9
+               8  70-79.9
+               9  80-89.9
+              10  90-94.9
+              11  95-98.9
+              12  99-100
+
+           Data type: numeric
+           Record/columns: 1/158-159
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  August 30, 2022
