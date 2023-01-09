@@ -5,7 +5,6 @@
 
 ## To do:
 ## add messages that explain what is happening
-## change third plot to gt table??
 
 library(shiny)
 library(bslib)
@@ -149,6 +148,8 @@ server <- function(input, output, session) {
 
   # data -----------------------------------------------------------------
   
+  # turn these two chunks into functions
+  
   dict <- reactive({
     req(input$dataset)
     switch (input$dataset,
@@ -168,7 +169,7 @@ server <- function(input, output, session) {
       "ncs" = haven::zap_labels(ncs),
       "scf" = haven::zap_labels(scf)
     )
-    #choose_dataset(input$dataset)  ## see explorer-utils.R
+    
   }) 
   
   countries <- reactive({                 ## this chunk is used in the
