@@ -157,8 +157,7 @@ server <- function(input, output, session) {
       "ncs" = ncs_dict,
       "scf" = scf_dict
     )
-    #choose_dict(input$dataset)  ## see explorer-utils.R
-    ## FIGURE OUT WHY THESE FUNCTIONS DON'T WORK WHEN DEPLOYED
+    
   })
   
   d <- reactive({
@@ -202,7 +201,7 @@ server <- function(input, output, session) {
       "1" = d() |> select(input$var1, matches("COUNTRY"), matches("WEIGHT")),
       "2" = d() |> select(input$var1, input$var2, matches("COUNTRY"), matches("WEIGHT")),
       "3" = d() |> select(input$var1, input$var2, input$var3, matches("COUNTRY"), matches("WEIGHT"))
-    ) |> ## for aesthetic purposes, see utils.R
+    ) |> ## for aesthetic purposes, see explorer-utils.R
       mutate(across(where(is.factor), wrap_fct_levels, width = 15))
     
     if (as.logical(input$drop_missing)) {

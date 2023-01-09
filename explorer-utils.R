@@ -1,28 +1,11 @@
 
 # helper functions --------------------------------------------------------
 
-choose_dataset <- function(x) {
-  switch (x,
-    "gss" = haven::zap_labels(gss),
-    "wvs" = haven::zap_labels(wvs),
-    "ncs" = haven::zap_labels(ncs)
-  )
-}
-
-choose_dict <- function(x) {
-  switch (x,
-    "gss" = gss_dict,
-    "wvs" = wvs_dict,
-    "ncs" = ncs_dict
-  )
-}
-
 wrap_fct_levels <- function(x, width = 15) {
   stopifnot(class(x) == "factor")
   levels(x) <- str_wrap(levels(x), width = 15)
   return(x)
 }
-
 
 table_plot_message <- function() {  ## not in use yet
   
