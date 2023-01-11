@@ -14,7 +14,6 @@ table_plot_message <- function() {  ## not in use yet
   
 }
 
-
 # histogram ---------------------------------------------------------------
 
 custom_histogram_numeric <- function(d, var1, type, survey_weights) {
@@ -303,8 +302,8 @@ custom_diff_means_plot_3 <- function(d, var1, var2, var3, type, survey_weights) 
       stat_summary(fun.data = mean_se, fun.args = list(mult = 1.96)) +
       facet_wrap(var3)
   }
-  return(out)
   
+  return(out)
   
 }
 
