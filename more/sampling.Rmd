@@ -17,7 +17,7 @@ You will probably not notice much differences in the graphs when toggling betwee
 
 Take a look at the following graph to get a sense of what this weights mean.
 
-```{r}
+```{r, out.width="80%", fig.align="center"}
 library(readr)
 library(ggplot2)
 
@@ -26,11 +26,13 @@ scf <- read_rds("../datasets/scf.rds")
 scf |> 
   ggplot(aes(ASSET, WEIGHT)) + 
   geom_point(alpha = 1/10) +
-  geom_smooth() +
+  geom_smooth(color = "#386890", fill = "#386890") +
   scale_x_log10(labels = scales::comma) + 
   scale_y_log10() + 
   facet_wrap(~RACECL) + 
-  theme_light(base_family = "Amiri")
+  theme_light(base_family = "Amiri") + 
+  theme(panel.background = element_rect(fill = "#FBF7F4"),
+        plot.background = element_rect(fill = "#FBF7F4"))
 ```
 
 *Note. That both* $x$ *and* $y$ *axes are in a logarithmic scale---i.e., they increase by multiples of 10.*

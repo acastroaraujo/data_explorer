@@ -12,7 +12,7 @@ between unweighted and weighted summaries.
 Take a look at the following graph to get a sense of what this weights
 mean.
 
-![](sampling_files/figure-markdown_strict/unnamed-chunk-1-1.png)
+<img src="sampling_files/figure-markdown_strict/unnamed-chunk-1-1.png" width="80%" style="display: block; margin: auto;" />
 
 *Note. That both* *x* *and* *y* *axes are in a logarithmic scale—i.e.,
 they increase by multiples of 10.*
