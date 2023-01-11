@@ -15,9 +15,11 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 You will probably not notice much differences in the graphs when toggling between "Yes" and "No" in the "Use survey weights?" option. This is not true if you look at the **Survey of Consumer Finances**. This survey is great to think about this issue because it over-samples people with high incomes/wealth, so you can expect a lot of differences between unweighted and weighted summaries.
 
+**All this means that the averages (and other summary statistics) we calculate won't be representative of the whole US population unless we use the survey weights.**
+
 Take a look at the following graph to get a sense of what this weights mean.
 
-```{r, out.width="80%", fig.align="center"}
+```{r, fig.width=8, fig.align="center"}
 library(readr)
 library(ggplot2)
 
@@ -32,9 +34,8 @@ scf |>
   facet_wrap(~RACECL) + 
   theme_light(base_family = "Amiri") + 
   theme(panel.background = element_rect(fill = "#FBF7F4"),
-        plot.background = element_rect(fill = "#FBF7F4"))
+        plot.background = element_rect(fill = "#FBF7F4"),
+        panel.border = element_blank())
 ```
 
 *Note. That both* $x$ *and* $y$ *axes are in a logarithmic scale---i.e., they increase by multiples of 10.*
-
-All this means that the averages (and other summary statistics) we calculate won't be representative of the whole US population unless we use the survey weights.
