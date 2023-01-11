@@ -6,7 +6,7 @@ output: md_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
 *"Survey weighting is a mess" (Gelman 2007, 153).*
@@ -24,7 +24,7 @@ library(ggplot2)
 scf <- read_rds("../datasets/scf.rds")
 
 scf |> 
-  ggplot(aes(NETWORTH, WEIGHT)) + 
+  ggplot(aes(ASSET, WEIGHT)) + 
   geom_point(alpha = 1/10) +
   geom_smooth() +
   scale_x_log10(labels = scales::comma) + 
